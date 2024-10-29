@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="createAccountForm" onsubmit="return validateForm()">
+      <h2>Create Account</h2>
+
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="coding_dev_" />
+        <small class="error-message">Username cannot be blank</small>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@gmail.com" />
+        <small class="error-message">Email cannot be blank</small>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <small class="success-message">Looks good!</small>
+      </div>
+
+      <!-- Password Check Field -->
+      <div class="form-group">
+        <label for="passwordCheck">Password check</label>
+        <input type="password" id="passwordCheck" />
+        <small class="success-message">Passwords match</small>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
